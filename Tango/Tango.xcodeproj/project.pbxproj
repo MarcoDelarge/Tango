@@ -10,9 +10,7 @@
 		884D94D028F36D75009C171C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94CF28F36D75009C171C /* AppDelegate.swift */; };
 		884D94D228F36D75009C171C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94D128F36D75009C171C /* SceneDelegate.swift */; };
 		884D94D428F36D75009C171C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94D328F36D75009C171C /* ViewController.swift */; };
-		884D94D728F36D75009C171C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884D94D528F36D75009C171C /* Main.storyboard */; };
 		884D94D928F36D77009C171C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884D94D828F36D77009C171C /* Assets.xcassets */; };
-		884D94DC28F36D77009C171C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884D94DA28F36D77009C171C /* LaunchScreen.storyboard */; };
 		884D94E728F36D77009C171C /* TangoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94E628F36D77009C171C /* TangoTests.swift */; };
 		884D94F128F36D77009C171C /* TangoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94F028F36D77009C171C /* TangoUITests.swift */; };
 		884D94F328F36D77009C171C /* TangoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94F228F36D77009C171C /* TangoUITestsLaunchTests.swift */; };
@@ -40,9 +38,7 @@
 		884D94CF28F36D75009C171C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		884D94D128F36D75009C171C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		884D94D328F36D75009C171C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		884D94D628F36D75009C171C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		884D94D828F36D77009C171C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		884D94DB28F36D77009C171C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		884D94DD28F36D77009C171C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		884D94E228F36D77009C171C /* TangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884D94E628F36D77009C171C /* TangoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoTests.swift; sourceTree = "<group>"; };
@@ -102,9 +98,7 @@
 				884D94CF28F36D75009C171C /* AppDelegate.swift */,
 				884D94D128F36D75009C171C /* SceneDelegate.swift */,
 				884D94D328F36D75009C171C /* ViewController.swift */,
-				884D94D528F36D75009C171C /* Main.storyboard */,
 				884D94D828F36D77009C171C /* Assets.xcassets */,
-				884D94DA28F36D77009C171C /* LaunchScreen.storyboard */,
 				884D94DD28F36D77009C171C /* Info.plist */,
 			);
 			path = Tango;
@@ -231,9 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884D94DC28F36D77009C171C /* LaunchScreen.storyboard in Resources */,
 				884D94D928F36D77009C171C /* Assets.xcassets in Resources */,
-				884D94D728F36D75009C171C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +287,6 @@
 			targetProxy = 884D94ED28F36D77009C171C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		884D94D528F36D75009C171C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				884D94D628F36D75009C171C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		884D94DA28F36D77009C171C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				884D94DB28F36D77009C171C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		884D94F428F36D77009C171C /* Debug */ = {
@@ -441,7 +414,6 @@
 				INFOPLIST_FILE = Tango/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +440,6 @@
 				INFOPLIST_FILE = Tango/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
