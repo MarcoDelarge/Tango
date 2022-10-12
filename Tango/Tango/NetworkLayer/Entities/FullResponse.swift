@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct FullResponse: Decodable {
+    var resultCount: Int?
+    var results: [Album]
+}

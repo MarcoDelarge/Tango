@@ -14,6 +14,12 @@
 		884D94E728F36D77009C171C /* TangoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94E628F36D77009C171C /* TangoTests.swift */; };
 		884D94F128F36D77009C171C /* TangoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94F028F36D77009C171C /* TangoUITests.swift */; };
 		884D94F328F36D77009C171C /* TangoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D94F228F36D77009C171C /* TangoUITestsLaunchTests.swift */; };
+		884D950228F49AC8009C171C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D950128F49AC7009C171C /* ServiceManager.swift */; };
+		884D950528F49E70009C171C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D950428F49E70009C171C /* Album.swift */; };
+		884D950728F4B031009C171C /* FullResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D950628F4B031009C171C /* FullResponse.swift */; };
+		884D950B28F4B2DC009C171C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D950A28F4B2DC009C171C /* HomeViewModel.swift */; };
+		884D950F28F4BD2C009C171C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D950E28F4BD2C009C171C /* HomeRouter.swift */; };
+		884D951128F4BD3E009C171C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D951028F4BD3E009C171C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		884D94EC28F36D77009C171C /* TangoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TangoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884D94F028F36D77009C171C /* TangoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoUITests.swift; sourceTree = "<group>"; };
 		884D94F228F36D77009C171C /* TangoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		884D950128F49AC7009C171C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		884D950428F49E70009C171C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		884D950628F4B031009C171C /* FullResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullResponse.swift; sourceTree = "<group>"; };
+		884D950A28F4B2DC009C171C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		884D950E28F4BD2C009C171C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		884D951028F4BD3E009C171C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,8 @@
 		884D94CE28F36D75009C171C /* Tango */ = {
 			isa = PBXGroup;
 			children = (
+				884D950028F499CD009C171C /* NetworkLayer */,
+				884D94FF28F499BA009C171C /* Home */,
 				884D94CF28F36D75009C171C /* AppDelegate.swift */,
 				884D94D128F36D75009C171C /* SceneDelegate.swift */,
 				884D94D328F36D75009C171C /* ViewController.swift */,
@@ -119,6 +133,34 @@
 				884D94F228F36D77009C171C /* TangoUITestsLaunchTests.swift */,
 			);
 			path = TangoUITests;
+			sourceTree = "<group>";
+		};
+		884D94FF28F499BA009C171C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				884D950A28F4B2DC009C171C /* HomeViewModel.swift */,
+				884D950E28F4BD2C009C171C /* HomeRouter.swift */,
+				884D951028F4BD3E009C171C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		884D950028F499CD009C171C /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				884D950328F49E52009C171C /* Entities */,
+				884D950128F49AC7009C171C /* ServiceManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		884D950328F49E52009C171C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				884D950428F49E70009C171C /* Album.swift */,
+				884D950628F4B031009C171C /* FullResponse.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884D951128F4BD3E009C171C /* HomeViewController.swift in Sources */,
 				884D94D428F36D75009C171C /* ViewController.swift in Sources */,
 				884D94D028F36D75009C171C /* AppDelegate.swift in Sources */,
+				884D950B28F4B2DC009C171C /* HomeViewModel.swift in Sources */,
 				884D94D228F36D75009C171C /* SceneDelegate.swift in Sources */,
+				884D950728F4B031009C171C /* FullResponse.swift in Sources */,
+				884D950F28F4BD2C009C171C /* HomeRouter.swift in Sources */,
+				884D950228F49AC8009C171C /* ServiceManager.swift in Sources */,
+				884D950528F49E70009C171C /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,8 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .green
+        ServiceManager.shared.callService(url: "https://itunes.apple.com/search?term=rammstein&entity=album")
     }
-
 
 }
 
