@@ -33,8 +33,13 @@ final class HomeViewModel: HomeViewModelProtocol {
     func search(artist: String) {
         self.searchTask?.cancel()
         let task = DispatchWorkItem {
-            ServiceManager.shared.callService(url: "https://itunes.apple.com/search?term=" + artist + "&entity=album") { [weak self] in
-                self?.albumNames = $0
+            ServiceManager.request(endpoint: ItunesEndpoint.getSearchResults(searchText: artist)) { [weak self] (result: Result<FullResponse, Error>) in
+                switch result {
+                case .success(let response):
+                    self?.albumNames = response.results.map{ $0.album ?? "" }
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
         self.searchTask = task

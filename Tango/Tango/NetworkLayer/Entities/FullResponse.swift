@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FullResponse: Decodable {
+struct FullResponse: Codable {
     var resultCount: Int?
     var results: [Album]
 }

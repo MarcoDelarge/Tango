@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Album: Decodable {
+struct Album: Codable {
     var artist: String?
     var album: String?
     var cover: String?
